@@ -10,9 +10,8 @@ This project is for self-study about applying the Yolo object detection algorith
 ## Features
 
 - Detecting the two classes of characters(T, CT) in the game
-  image
 - Detecting the head positions(Th, CTh) from two type of classes
-  image
+  ![Example Image](examples/val_batch0_pred.jpg)
 
 ## Getting Started
 
