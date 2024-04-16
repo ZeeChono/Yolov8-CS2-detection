@@ -24,8 +24,23 @@ Ensure you have the following dependencies installed before running the project:
 - [torchvision](https://pytorch.org/vision/stable/index.html) (PyTorch's package for computer vision tasks)
 - [Ultralytics](https://github.com/ultralytics/yolov5) (installation instructions available on the Ultralytics GitHub repository: https://github.com/ultralytics/ultralytics)
 
-You can also use the following command to install all required libraries.
+You can use the following command to manually install all required libraries.
 ```bash
+# requires your device support cuda11.8
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+Pip install ultralytics
+pip install pywin32
+# Then downgrade the pillow lib to 9.5
+pip install "Pillow==9.5"
+```
+**OR**
+
+You can also use the requirements file to check your env:  
+When I was using the reuqirements file, this cuda install is giving me most of the headache, so you may want to manually check your supported cuda version and download it first from here: https://pytorch.org/
+```bash
+# Install the pytorch packages manually first
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# Rest are easy
 pip install -r requirements. txt
 ```
 
