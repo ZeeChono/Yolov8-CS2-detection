@@ -47,7 +47,7 @@ if __name__ == '__main__':
   # Load the model first
   # model = YOLO('../yolov8n.pt')
   model = YOLO('models/175.pt')
-  model.to('cuda')
+  model.to('cuda')  # use GPU for faster inference time
 
   WINDOW_NAME = "Counter-Strike 2"  # change this to the game window
 

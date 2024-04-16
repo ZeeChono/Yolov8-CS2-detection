@@ -9,4 +9,4 @@ model = YOLO("yolov8n.yaml")  # build a new model from scratch
 # Use the model
 if __name__ == '__main__':
     results = model.train(data="config.yaml", batch=16, momentum=0.937,
-                          epochs=300, lr0=0.01,verbose=False)  # train the model 
+                          epochs=10, lr0=0.01,verbose=False, device=0)  # train the model 
